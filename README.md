@@ -1,0 +1,33 @@
+:black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square:  
+:black_large_square::black_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::black_large_square:   
+:black_large_square::white_large_square::white_large_square::white_large_square::black_large_square::black_large_square::black_large_square::white_large_square::black_large_square:  
+:black_large_square::black_large_square::white_large_square::white_large_square::white_large_square::white_large_square::black_large_square::black_large_square:  
+:black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::white_large_square::white_large_square::white_large_square:     
+:black_large_square::white_large_square::white_large_square::black_large_square::black_large_square::white_large_square::white_large_square::white_large_square:  
+:black_large_square::black_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::black_large_square:   
+:black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square:  
+
+:black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square:  :black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square:  
+:black_large_square::black_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::black_large_square::black_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::black_large_square::black_large_square:  :black_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::black_large_square::black_large_square:  
+:black_large_square::white_large_square::white_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::white_large_square::white_large_square::black_large_square::black_large_square::black_large_square::white_large_square::white_large_square::black_large_square:  :white_large_square::white_large_square::black_large_square::black_large_square::black_large_square::white_large_square::white_large_square::black_large_square:  
+:black_large_square::black_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::black_large_square::black_large_square::white_large_square::white_large_square::black_large_square::black_large_square::black_large_square::white_large_square::white_large_square::black_large_square:  :white_large_square::white_large_square::black_large_square::black_large_square::black_large_square::white_large_square::white_large_square::black_large_square:  
+:black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::white_large_square::white_large_square::black_large_square::white_large_square::white_large_square::black_large_square::black_large_square::black_large_square::white_large_square::white_large_square::black_large_square:  :white_large_square::white_large_square::black_large_square::black_large_square::black_large_square::white_large_square::white_large_square::black_large_square:  
+:black_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::black_large_square::black_large_square::black_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::black_large_square::black_large_square:  :black_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::black_large_square::black_large_square:  
+:black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square:  :black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square:  
+
+:black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square:  
+:black_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::black_large_square::black_large_square:  
+:white_large_square::white_large_square::black_large_square::black_large_square::black_large_square::white_large_square::white_large_square::black_large_square:  
+:white_large_square::white_large_square::black_large_square::black_large_square::black_large_square::white_large_square::white_large_square::black_large_square:  
+:white_large_square::white_large_square::black_large_square::black_large_square::black_large_square::white_large_square::white_large_square::black_large_square:  
+:black_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::black_large_square::black_large_square:  
+:black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square::black_large_square:  
+
+:white_large_square::white_large_square::white_large_square::black_large_square:  
+:black_large_square::white_large_square::white_large_square::black_large_square:  
+:black_large_square::white_large_square::white_large_square::black_large_square:  
+:black_large_square::white_large_square::white_large_square::black_large_square:  
+:black_large_square::white_large_square::white_large_square::black_large_square:  
+:black_large_square::white_large_square::white_large_square::black_large_square:  
+:black_large_square::black_squa+ge_square::black_large_square::black_large_square:  
+# So_long

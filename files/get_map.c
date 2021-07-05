@@ -4,21 +4,25 @@
 static int convert_variables(char c, t_params *maze, int i, int j)
 {
 	if (c == '1')
-		return (1);
+		return (WALL_ID);
 	if (c == '0')
-		return (0);
+		return (FLOOR_ID);
 	if (c == 'E') {
 		maze->end_y = i;
 		maze->end_x = j;
-		return (3);
+		return (EXIT_ID);
 	}
 	if (c == 'P') {
 		maze->start_y = i;
 		maze->start_x = j;
-		return (-1);
+		return (PLAYER_ID);
 	}
 	if (c == 'C')
-		return (2);
+		return (SPRITE_ID);
+	if (c == 'L')
+		return (LAVA_ID);
+	if (c == 'G')
+		return (GRASS_ID);
 	error_case("INVALID EVERYTHING", -100500);
 	return (15);
 }
@@ -56,7 +60,7 @@ void	get_map(char *map_name, t_params *maze)
 	while (get_next_line(fd, &line) > 0)
 	{
 		maze->height++;
-		maze->width = ft_strlen(line);
+		maze->width = (int)ft_strlen(line);
 		free(line);
 	}
 	free(line);

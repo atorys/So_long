@@ -66,11 +66,11 @@ int main(int argc, char *argv[])
 //	for (int j = 0; j < maze.width+2; j++)
 //		printf("\033[47m  \033[0m");
 //	printf("\n");
-
+//
 	maze.mlx = mlx_init();
 	if (!maze.mlx)
 		error_case("Mlx failed", -1);
-	maze.win = mlx_new_window(maze.mlx, maze.width * 32, maze.height * 32, "So_long");
+	maze.win = mlx_new_window(maze.mlx, maze.width * 16, maze.height * 16, "So_long");
 
 	width = maze.width;
 	height = maze.height;

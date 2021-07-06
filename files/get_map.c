@@ -7,6 +7,8 @@ static int convert_variables(char c, t_params *maze, int i, int j)
 		return (WALL_ID);
 	if (c == '0')
 		return (FLOOR_ID);
+	if (c == '8')
+		return (FLOOR2_ID);
 	if (c == 'E') {
 		maze->end_y = i;
 		maze->end_x = j;
@@ -19,12 +21,23 @@ static int convert_variables(char c, t_params *maze, int i, int j)
 	}
 	if (c == 'C')
 		return (SPRITE_ID);
-	if (c == 'L')
-		return (LAVA_ID);
+	if (c == 'L' || c == 'l')
+		return ((c == 'L') ? LAVA_ID : LAVAD_ID);
+	if (c == ' ' || c == '.')
+		return ((c == ' ') ? FLOOR3_ID : FLOOR4_ID);
 	if (c == 'G')
 		return (GRASS_ID);
-	error_case("INVALID EVERYTHING", -100500);
-	return (15);
+	if (c == '2' || c == '3' || c == '4' || c == '5' || c == '6')
+		return ((c == '2') ? L_W_BLOCK_ID : (c == '3') ? C_W_BLOCK_ID : (c == '4') ? R_W_BLOCK_ID : (c == '5') ? E_W_BLOCK_ID : F_W_BLOCK_ID);
+	if (c == 'T' || c == '|')
+		return ((c == 'T') ? CHAIN_UP_ID : CHAIN_ID);
+	if (c == '^' || c == 'V' || c == '>' || c == '<')
+		return ((c == '^') ? TOOTH_DOWN_ID : (c == 'V') ? TOOTH_UP_ID : (c == '>') ? TOOTH_LEFT_ID : TOOTH_RIGHT_ID);
+	if (c == 'D' || c == 'U' || c == 'H')
+		return ((c == 'D') ? COL_DOWN_ID : (c == 'U') ? COL_UP_ID : COL_HALF_ID);
+	printf("{%d %d}\n", i, j);
+//	error_case("INVALID EVERYTHING", -100500);
+	return (-1);
 }
 
 static void get_char_set(char *map_name, t_params *maze)

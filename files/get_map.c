@@ -3,38 +3,42 @@
 
 static int convert_variables(char c, t_params *maze, int i, int j)
 {
-	if (c == '1')
-		return (WALL_ID);
-	if (c == '0')
-		return (FLOOR_ID);
-	if (c == '8')
-		return (FLOOR2_ID);
+	if (c == '1' || c == '@' || c == '#')
+		return ((c == '1') ? ID_WALL : (c == '@') ? ID_WALL_CUBE : ID_WALL_DEST);
+	if (c == '0' || c == '8')
+		return ((c == '0') ? ID_FLOOR : ID_FLOOR2);
+
+	if (c == '2' || c == '3' || c == '4' || c == '5' || c == '6')
+		return ((c == '2') ? ID_BLOCK_L : (c == '3') ? ID_BLOCK_C : (c == '4') ?ID_BLOCK_R : (c == '5') ? ID_BLOCK_E : ID_BLOCK_F);
+
+	if (c == 'D' || c == 'U' || c == 'H' || c == 'M')
+		return ((c == 'D') ? ID_COL_B : (c == 'U') ? ID_COL_T : (c == 'H') ? ID_COL_H : ID_COL_M);
+
+	if (c == '^' || c == 'V' || c == '>' || c == '<')
+		return ((c == '^') ? ID_TEETH_B : (c == 'V') ? ID_TEETH_T : (c == '>') ? ID_TEETH_L : ID_TEETH_R);
+
+	if (c == 'T' || c == '|')
+		return ((c == 'T') ? ID_CHAIN_T : ID_CHAIN);
+
+	if (c == 'G')
+		return (ID_GRASS1);
+	if (c == 'L')
+		return (ID_LAVA1);
+	if (c == '*')
+		return (ID_ICE);
+
 	if (c == 'E') {
 		maze->end_y = i;
 		maze->end_x = j;
-		return (EXIT_ID);
+		return (ID_EXIT);
 	}
 	if (c == 'P') {
 		maze->start_y = i;
 		maze->start_x = j;
-		return (PLAYER_ID);
+		return (ID_PLAYER);
 	}
 	if (c == 'C')
-		return (SPRITE_ID);
-	if (c == 'L' || c == 'l')
-		return ((c == 'L') ? LAVA_ID : LAVAD_ID);
-	if (c == ' ' || c == '.')
-		return ((c == ' ') ? FLOOR3_ID : FLOOR4_ID);
-	if (c == 'G')
-		return (GRASS_ID);
-	if (c == '2' || c == '3' || c == '4' || c == '5' || c == '6')
-		return ((c == '2') ? L_W_BLOCK_ID : (c == '3') ? C_W_BLOCK_ID : (c == '4') ? R_W_BLOCK_ID : (c == '5') ? E_W_BLOCK_ID : F_W_BLOCK_ID);
-	if (c == 'T' || c == '|')
-		return ((c == 'T') ? CHAIN_UP_ID : CHAIN_ID);
-	if (c == '^' || c == 'V' || c == '>' || c == '<')
-		return ((c == '^') ? TOOTH_DOWN_ID : (c == 'V') ? TOOTH_UP_ID : (c == '>') ? TOOTH_LEFT_ID : TOOTH_RIGHT_ID);
-	if (c == 'D' || c == 'U' || c == 'H')
-		return ((c == 'D') ? COL_DOWN_ID : (c == 'U') ? COL_UP_ID : COL_HALF_ID);
+		return (ID_SPRITE);
 	printf("{%d %d}\n", i, j);
 //	error_case("INVALID EVERYTHING", -100500);
 	return (-1);
@@ -74,6 +78,7 @@ void	get_map(char *map_name, t_params *maze)
 	{
 		maze->height++;
 		maze->width = (int)ft_strlen(line);
+		printf("\n [%d %d] \n", maze->height , maze->width);
 		free(line);
 	}
 	free(line);

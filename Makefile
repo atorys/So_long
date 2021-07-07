@@ -11,6 +11,7 @@ VPATH =		files \
 			objects
 
 HEADERS =	so_long.h \
+			textures.h \
 			get_next_line.h \
 			libft.h
 
@@ -19,6 +20,7 @@ LIBRARYS =	mlx/libmlx.a \
 
 #----------FILES
 FILES =		main.c \
+			game.c \
 			get_map.c \
 			get_next_line.c \
 			get_next_line_utils.c \

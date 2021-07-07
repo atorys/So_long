@@ -12,4 +12,4 @@ add_executable(solong
         includes/so_long.h
         files/get_map.c
         libft/ft_putstr_fd.c
-        libft/ft_putchar_fd.c files/render.c)
+        libft/ft_putchar_fd.c files/render.c files/game.c includes/textures.h)

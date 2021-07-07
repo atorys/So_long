@@ -35,7 +35,6 @@ int	key_event(int key, t_params *maze)
 int main(int argc, char *argv[])
 {
 	t_params	maze;
-	t_frame 	img;
 	int			width;
 	int			height;
 
@@ -66,16 +65,13 @@ int main(int argc, char *argv[])
 //	for (int j = 0; j < maze.width+2; j++)
 //		printf("\033[47m  \033[0m");
 //	printf("\n");
-//
+
 	maze.mlx = mlx_init();
 	if (!maze.mlx)
 		error_case("Mlx failed", -1);
 	maze.win = mlx_new_window(maze.mlx, maze.width * 16, maze.height * 16, "So_long");
 
-	width = maze.width;
-	height = maze.height;
-	build_static_blocks(&maze, width, height);
-	build_dynamic_blocks(&maze, width, height);
+	run(&maze);
 
 	mlx_hook(maze.win, 2, 0, key_event, &maze);
 	mlx_hook(maze.win, 17, 0, esc, &maze);

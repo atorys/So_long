@@ -67,7 +67,8 @@ void	move_player(t_params *maze, int step_x, int step_y, int key)
 			maze->table[maze->start_y + 1][maze->start_x] = ID_FLOOR;
 			(!maze->sprites_count) ? mlx_put_image_to_window(maze->mlx, maze->win, maze->exit->img, maze->end_x * SIZE, maze->end_y * SIZE) : 0;
 		}
-		usleep(10000);
+		(maze->start_y == maze->end_y && maze->start_x == maze->end_x && !maze->sprites_count) ? esc() : 0;
+//		usleep(10000);
 		build_prev_block(maze);
 //		usleep(1);
 //		falling(maze);

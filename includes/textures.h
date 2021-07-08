@@ -79,7 +79,7 @@ enum e_id {
 	/** ice cube */				ID_ICE,
 	/** exit key */				ID_EXIT,
 	/** sprite */				ID_SPRITE,
-	/** player */				ID_PLAYER,
+//	/** player */				ID_PLAYER,
 };
 
 #endif

@@ -6,7 +6,8 @@
 # define T_PLAYER_U "textures/character_up.xpm"
 # define T_PLAYER_D "textures/character_down.xpm"
 
-# define T_SPRITE "textures/cherry3.xpm"
+//# define T_SPRITE "textures/cherry3.xpm"
+# define T_SPRITE "textures/sprite_coin.xpm"
 # define T_EXIT "textures/key.xpm"
 
 # define T_WALL "textures/wall.xpm"
@@ -42,8 +43,6 @@
 # define T_LAVA1 "textures/lavad.xpm"
 # define T_LAVA2 "textures/lavad2.xpm"
 # define T_ICE "textures/ice.xpm"
-
-
 
 enum e_id {
 	/** brick wall*/			ID_WALL,

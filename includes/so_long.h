@@ -10,6 +10,7 @@
 # include "textures.h"
 
 # define MALLOCERROR "\033[0;33mMalloc failed\033[0m\n"
+# define SIZE 24
 
 typedef struct s_frame
 {
@@ -37,6 +38,7 @@ typedef struct s_params
 	int	start_y;
 	int	end_x;
 	int	end_y;
+	int sprites_count;
 
 	struct s_frame	*wall;
 	struct s_frame	*wall_cube;
@@ -84,8 +86,16 @@ void 	error_case(char *message, int number);
 void	get_map(char *map_name, t_params *maze);
 
 void	run(t_params *maze);
-
+t_frame	*get_frame_and_set_size_and_pereimenyi(void *mlx, const char *file, int set_w, int set_h);
 
 void	build_static_blocks(t_params	*maze, int w, int h);
 void 	build_dynamic_blocks(t_params	*maze, int w, int h);
+void	build_player(t_params	*maze, t_frame *player);
+void	build_prev_block(t_params *maze);
 #endif
+
+
+
+
+
+

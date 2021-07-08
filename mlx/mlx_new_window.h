@@ -1,7 +1,7 @@
 //
 // mlx_int.h for minilibx
 //
-// ol@staff.42.fr
+// ol1staff.42.fr
 //
 // include opengl needed before mlx_int.h
 //

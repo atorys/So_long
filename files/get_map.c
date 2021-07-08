@@ -30,17 +30,19 @@ static int convert_variables(char c, t_params *maze, int i, int j)
 	if (c == 'E') {
 		maze->end_y = i;
 		maze->end_x = j;
-		return (ID_EXIT);
+		return (ID_FLOOR);
 	}
 	if (c == 'P') {
 		maze->start_y = i;
 		maze->start_x = j;
-		return (ID_PLAYER);
+		return (ID_FLOOR);
 	}
 	if (c == 'C')
+	{
+		maze->sprites_count++;
 		return (ID_SPRITE);
-	printf("{%d %d}\n", i, j);
-//	error_case("INVALID EVERYTHING", -100500);
+	}
+	error_case("INVALID EVERYTHING", -100500);
 	return (-1);
 }
 
@@ -52,6 +54,7 @@ static void get_char_set(char *map_name, t_params *maze)
 
 	if (fd < 0)
 		error_case("Failed to open map", -1);
+	maze->sprites_count = 0;
 	while (++i < maze->height && get_next_line(fd, &line))
 	{
 		maze->table[i] = (int *)malloc(sizeof(int) * (maze->width + 1));
@@ -78,7 +81,6 @@ void	get_map(char *map_name, t_params *maze)
 	{
 		maze->height++;
 		maze->width = (int)ft_strlen(line);
-		printf("\n [%d %d] \n", maze->height , maze->width);
 		free(line);
 	}
 	free(line);

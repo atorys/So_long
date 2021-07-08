@@ -16,21 +16,22 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include "mlx.h"
+#include "includes/so_long.h"
 
 #define g "\e[1;38;2;29;153;12m"
 #define r "\e[1;38;2;153;12;12m"
 #define raspberry "\e[1;38;2;153;12;83m"
 
-typedef struct s_frame
-{
-	void	*img;
-	char	*addr;
-	int		bpp;
-	int		length;
-	int		end;
-	int		h;
-	int		w;
-}				t_frame;
+//typedef struct s_frame
+//{
+//	void	*img;
+//	char	*addr;
+//	int		bpp;
+//	int		length;
+//	int		end;
+//	int		h;
+//	int		w;
+//}				t_frame;
 
 // ____________________________________________________________________FUNCTIONS
 
@@ -62,7 +63,7 @@ static void	rewrite_image(t_frame *new_img, t_frame *old_img)
 
 	step_y = (double)old_img->h / new_img->h;
 	step_x = (double)old_img->w / new_img->w;
-	printf("{%f, %f}\n", step_x, step_y);
+//	printf("{%f, %f}\n", step_x, step_y);
 	for (size_t y = 0; y < new_img->h; y++)
 		for (size_t x = 0; x < new_img->w; x++)
 		{
@@ -143,19 +144,19 @@ t_frame	*get_frame_and_set_size_and_pereimenyi(void *mlx, const char *file, int 
 
 // ________________________________________________________________MAIN FOR TEST
 
-int main()
-{
-	void	*mlx;
-	void	*win;
-	t_frame	*zdes_vsyo_about_kartinka;
-
-	printf ("%sthere will be a test here\e[m\n", raspberry);
-	mlx = mlx_init();
-	win = mlx_new_window(mlx, 1600, 900, "Unicorn");
-	zdes_vsyo_about_kartinka = get_frame_and_set_size_and_pereimenyi(mlx, "for_mary/cherry.xpm", 8, 8);
-	if (!zdes_vsyo_about_kartinka)
-		return (printf ("%soshibochka\e[m\n", r));
-	mlx_put_image_to_window(mlx, win, zdes_vsyo_about_kartinka->img, 0, 0);
-	mlx_loop(mlx);
-	return (0);
-}
+//int main()
+//{
+//	void	*mlx;
+//	void	*win;
+//	t_frame	*zdes_vsyo_about_kartinka;
+//
+//	printf ("%sthere will be a test here\e[m\n", raspberry);
+//	mlx = mlx_init();
+//	win = mlx_new_window(mlx, 1600, 900, "Unicorn");
+//	zdes_vsyo_about_kartinka = get_frame_and_set_size_and_pereimenyi(mlx, "for_mary/cherry.xpm", 8, 8);
+//	if (!zdes_vsyo_about_kartinka)
+//		return (printf ("%soshibochka\e[m\n", r));
+//	mlx_put_image_to_window(mlx, win, zdes_vsyo_about_kartinka->img, 0, 0);
+//	mlx_loop(mlx);
+//	return (0);
+//}

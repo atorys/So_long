@@ -24,6 +24,7 @@ FILES =		main.c \
 			get_map.c \
 			get_next_line.c \
 			get_next_line_utils.c \
+			get_frame_and_set_size.c \
 			render.c
 
 O_FILES = 	$(addprefix objects/, $(FILES:.c=.o))

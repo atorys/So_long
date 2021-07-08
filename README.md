@@ -18,4 +18,6 @@
  <tr><td> L </td><td><img src="frames/lavad.png" align="center" width="20px" height="20px"> </td><td>  </td><td>  *</td><td><img src="frames/ice.png" align="center" width="20px" height="20px"> </td><td></td><td> U </td><td><img src="frames/column_up.png" align="center" width="20px" height="20px" ></td><td></td><td> 6 </td><td><img src=frames/wooden_block3.png align="center" width="20px" height="20px" ></td></tr>
 </table>
 
+___
  
+<img src="frames/simple.gif" width="420px">
